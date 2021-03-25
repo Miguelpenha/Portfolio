@@ -55,7 +55,9 @@
             background-color: #0A192F;
             border: 1px solid #43CDF5;
             color: #43CDF5;
-            margin-left: 5%;
+            margin-left: 1%;
+            text-align: center;
+            height: 10%;
         }
     
         .btn-nav:hover {
@@ -101,7 +103,8 @@
     
         .p-p {
             color: #8892B0;
-            font-size: 1.3vw;
+            font-size: 1.3em;
+            width: 45%;
         }
     
         .desc-p {
@@ -109,11 +112,19 @@
         }
     
         .desc-p:hover {
+            color: #43CDF5;
             text-decoration: underline solid #43CDF5;
         }
 
         .logo-redes {
             width: 50px;
+        }
+
+        .logo-redes:hover {
+            border-radius: 25%;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
+            background-color: rgba(67, 206, 245, 0.171);
         }
 
         .redes {
@@ -138,6 +149,19 @@
             margin-top: 0%;
         }
 
+        .row-txt-prin {
+            padding-top: 4.5%;
+            width: 100%;
+        }
+
+        .nav-link {
+            width: 100%;
+        }
+
+        .nav-item {
+            margin-left: 0;
+        }
+
         @media screen and (max-width: 1250px) {
             .h1-dev-tit-prin {
                 font-size: 3.8em;
@@ -149,6 +173,10 @@
 
             .ola-nome {
                 font-size: 1.2em;
+            }
+
+            .p-p {
+                font-size: 1.1em;
             }
         }
 
@@ -168,6 +196,15 @@
             .apren-prin {
                 margin-top: 2%;
             }
+
+            .p-p {
+                font-size: 1em;
+                width: 60%;
+            }
+
+            .btn-nav {
+                font-size: 0.8em;
+            }
         }
 
         @media screen and (max-width: 800px) {
@@ -177,6 +214,14 @@
 
             .h1-nome-tit-prin {
                 font-size: 1.8em;
+            }
+
+            .p-p {
+                font-size: 0.8em;
+            }
+
+            .btn-nav {
+                font-size: 0.7em;
             }
         }
 
@@ -196,14 +241,52 @@
             .logo-redes {
                 width: 15px;
             }
+
             .redes {
                 padding-left: 2px;
+            }
+            
+            .p-p {
+                font-size: 0.8em;
+                width: 100%;
+            }
+
+            .h1-dev-tit-prin {
+                font-size: 1.2em;
+            }
+
+            .h1-nome-tit-prin {
+                font-size: 1.2em;
+            }
+
+            .ola-nome {
+                font-size: 0.8em;
             }
         }
 
         @media screen and (max-width: 334px) {
             .logo-redes {
                 width: 10px;
+            }
+
+            .p-p {
+                font-size: 0.8em;
+            }
+
+            .h1-dev-tit-prin {
+                font-size: 1em;
+            }
+
+            .h1-nome-tit-prin {
+                font-size: 1em;
+            }
+
+            .ola-nome {
+                font-size: 0.8em;
+            }
+
+            .row-txt-prin {
+                margin-top: 10%;
             }
         }
 
@@ -212,10 +295,16 @@
                 visibility: hidden;
             }
         }
+
+        @media screen and (max-width: 170px) {
+            .row-txt-prin {
+                padding-top: 50%;
+            }
+        }
     </style>
+    <div id="sobre"></div>
     <nav class="navbar navbar-expand-md fixed-top" id="navbar">
         <!-- Brand -->
-        <a class="navbar-brand" href="#" style="color: #43CDF5;">Navbar</a>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon">
@@ -229,43 +318,42 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar" id="navBarMenu">
             <ul class="navbar-nav">
                 <li class="nav-item sobre">
-                    <a class="nav-link" href="#">Sobre Mim</a>
+                    <a class="nav-link" href="#sobre">Sobre Mim</a>
                 </li>
                 <li class="nav-item gale">
-                    <a class="nav-link" href="#">Galeria de Códigos</a>
+                    <a class="nav-link" href="https://github.com/Miguelpenha?tab=repositories" target="_blank" rel="external">Galeria de Códigos</a>
                 </li>
                 <li class="nav-item outro">
                     <a class="nav-link" href="#">Link</a>
                 </li>
-                <button class="btn btn-nav">Fale Comigo</button>
+                <a class="btn btn-nav" href="mailto:miguel.penha1@gmail.com" rel="external">Fale Comigo</a>
             </ul>
         </div>
     </nav>
-    <div id="resu"></div>
     <div class="container redes">
         <ul style="list-style: none;">
             <li>
-                <a href="https://github.com/MiguelPenha" target="_blank">
+                <a href="https://github.com/MiguelPenha" target="_blank" rel="external">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-github logo-redes"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/mglpenha">
+                <a href="https://www.instagram.com/mglpenha" rel="external" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-instagram logo-redes"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
             </li>
         </ul>
     </div>
     <div class="jumbotron apren-prin">
-        <div class="row" style="padding-top: 4.5%;width: 100%;">
+        <div class="row row-txt-prin">
             <div class="container" style="padding: 0 0 0 0;margin-left: 10%;">
                 <span class="ola-nome">Olá, Meu nome é </span>
                 <br>
                 <h1 class="h1-nome-tit-prin">Miguel Penha</h1>
-                <span class="h1-dev-tit-prin">Desenvolvedor Web, <a href="" style="color: #43CDF5;">Full-Stack</a></span>
-                <p style="width: 45%;font-size: 1;" class="p-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi eum obcaecati itaque autem, voluptate explicabo vero odit laudantium voluptas ipsam iste voluptates ea dolorem! <span class="desc-p">Harum</span> repellat assumenda itaque mollitia!</p>
+                <span class="h1-dev-tit-prin">Desenvolvedor Web, <a href="https://github.com/MiguelPenha" style="color: #43CDF5;" target="_blank" rel="external">Full-Stack</a></span>
+                <p class="p-p">Olá, eu me chamo Miguel Penha, eu sou um desenvolvedor web full-stack, já fiz sites com <a href="https://github.com/Miguelpenha/Usando-Api-Do-Github-Filipe-Deschamps" class="desc-p" rel="external" target="_blank">Next Js</a> e <a href="https://github.com/Miguelpenha/Mercado-Node-Js" class="desc-p" rel="external" target="_blank">Node Js</a>. Também tenho conhecimento em <a href="https://github.com/Miguelpenha/Assistente" class="desc-p" rel="external" target="_blank">Python</a>, também faço simple page como o site do <a href="https://josivalpenha.site/" class="desc-p" rel="external" target="_blank">Josival Penha</a></p>
                 <br>
-                <button class="btn btn-pa" style="padding: 1.5%;">Ver meus códigos</button>
+                <a class="btn btn-pa" style="padding: 1.5%;" target="_blank" href="https://github.com/MiguelPenha" rel="external">Ver meus códigos</a>
             </div>
         </div>
     </div>
