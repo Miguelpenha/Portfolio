@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Miguel Penha</title>
+</head>
+<body>
+    <style>
+        * {
+            background-color: #0A192F;
+            color: #43CDF5;
+        }
+    
+        .navbar {
+            background-color: #0A192F;
+            width: 100%;
+        }
+    
+        .btn-pa {
+            background-color: #0A192F;
+            border: 1px solid #43CDF5;
+            color: #43CDF5;
+        }
+    
+        .btn-pa:hover {
+            background-color: rgba(67, 206, 245, 0.171);
+            border: none;
+            color: #43CDF5;
+            border: 1px solid #43CDF5;
+        }
+    
+        .navbar-collapse {
+            margin-left: 50%;
+        }
+    
+        .nav-link {
+            color: #CCD6F6;
+            transition-timing-function: linear;
+            transition-duration: 0.2s;
+            border-left: 2px solid #43CDF5;
+        }
+    
+        .nav-link:hover {
+            color: #43CDF5;
+            background-color: rgba(67, 206, 245, 0.171);
+        }
+    
+        .btn-nav {
+            background-color: #0A192F;
+            border: 1px solid #43CDF5;
+            color: #43CDF5;
+            margin-left: 5%;
+        }
+    
+        .btn-nav:hover {
+            background-color: rgba(67, 206, 245, 0.171);
+            border: none;
+            color: #43CDF5;
+            border: 1px solid #43CDF5;
+        }
+    
+        .navbar-nav {
+            width: 85%;
+            padding-top: 2%;
+            margin-left: 17%;
+        }
+    
+        .navbar-nav>.gale {
+            margin-left: 5%;
+        }
+    
+        .navbar-nav>.outro {
+            margin-left: 5%;
+        }
+    
+        .navbar-nav>.sobre {
+            margin-left: 5%;
+        }
+    
+        .h1-dev-tit-prin {
+            color: #8892B0;
+            font-size: 4.8em;
+            width: 100%;
+        }
+    
+        .h1-nome-tit-prin {
+            color: #CCD6F6;
+            font-size: 4.8em;
+            width: 100%;
+        }
+
+        .ola-nome {
+            font-size: 1.2em;
+        }
+    
+        .p-p {
+            color: #8892B0;
+            font-size: 1.3vw;
+        }
+    
+        .desc-p {
+            color: #43CDF5;
+        }
+    
+        .desc-p:hover {
+            text-decoration: underline solid #43CDF5;
+        }
+
+        .logo-redes {
+            width: 50px;
+        }
+
+        .redes {
+            position: fixed;
+            width: 5%;
+            margin-top: 20%;
+            border-left: 3px solid #43CDF5;
+            margin-left: 1%;
+        }
+
+        .redes>ul>li {
+            margin-top: 40%;
+        }
+
+        .redes>ul {
+            padding-left: 0;
+        }
+
+        .apren-prin {
+            background-color: #0A192F;
+            border-radius:0;
+            margin-top: 0%;
+        }
+
+        @media screen and (max-width: 1250px) {
+            .h1-dev-tit-prin {
+                font-size: 3.8em;
+            }
+
+            .h1-nome-tit-prin {
+                font-size: 3.8em;
+            }
+
+            .ola-nome {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .h1-dev-tit-prin {
+                font-size: 2.8em;
+            }
+
+            .h1-nome-tit-prin {
+                font-size: 2.8em;
+            }
+
+            .ola-nome {
+                font-size: 1em;
+            }
+
+            .apren-prin {
+                margin-top: 2%;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .h1-dev-tit-prin {
+                font-size: 1.8em;
+            }
+
+            .h1-nome-tit-prin {
+                font-size: 1.8em;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .logo-redes {
+                width: 35px;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .logo-redes {
+                width: 25px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .logo-redes {
+                width: 15px;
+            }
+            .redes {
+                padding-left: 2px;
+            }
+        }
+
+        @media screen and (max-width: 334px) {
+            .logo-redes {
+                width: 10px;
+            }
+        }
+
+        @media screen and (max-width: 237px) {
+            .redes {
+                visibility: hidden;
+            }
+        }
+    </style>
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#" style="color: #43CDF5;">Navbar</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#43CDF5" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+            </span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" id="navBarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item sobre">
+                    <a class="nav-link" href="#">Sobre Mim</a>
+                </li>
+                <li class="nav-item gale">
+                    <a class="nav-link" href="#">Galeria de Códigos</a>
+                </li>
+                <li class="nav-item outro">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <button class="btn btn-nav">Fale Comigo</button>
+            </ul>
+        </div>
+    </nav>
+    <div id="resu"></div>
+    <div class="container redes">
+        <ul style="list-style: none;">
+            <li>
+                <a href="https://github.com/MiguelPenha" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-github logo-redes"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/mglpenha">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-instagram logo-redes"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="jumbotron apren-prin">
+        <div class="row" style="padding-top: 4.5%;width: 100%;">
+            <div class="container" style="padding: 0 0 0 0;margin-left: 10%;">
+                <span class="ola-nome">Olá, Meu nome é </span>
+                <br>
+                <h1 class="h1-nome-tit-prin">Miguel Penha</h1>
+                <span class="h1-dev-tit-prin">Desenvolvedor Web, <a href="" style="color: #43CDF5;">Full-Stack</a></span>
+                <p style="width: 45%;font-size: 1;" class="p-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi eum obcaecati itaque autem, voluptate explicabo vero odit laudantium voluptas ipsam iste voluptates ea dolorem! <span class="desc-p">Harum</span> repellat assumenda itaque mollitia!</p>
+                <br>
+                <button class="btn btn-pa" style="padding: 1.5%;">Ver meus códigos</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
