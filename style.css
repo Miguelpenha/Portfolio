@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #8892B0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection {
+    background-color: #43cef5d3;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0a192f;
+}
+
+header {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header>nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header>.social {
+    margin-right: auto;
+}
+
+header>nav>a {
+    margin: 0.4em;
+    padding: 0.7em;
+    color: #ccd6f6;
+    font-size: 1.2em;
+    align-self: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 2px solid #43cef5;
+    transition-timing-function: linear;
+}
+
+header>nav>a:hover {
+    color: #43cef5;
+    background-color: #43cef531;
+}
+
+header>nav>a>svg {
+    width: 1.8em;
+}
+
+main {
+    display: flex;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 1.5em;
+    flex-direction: column;
+}
+
+main .highlighted {
+    color: #43cef5;
+}
+
+main .primary {
+    color: #CCD6F6;
+}
+
+main>.presentation {
+    font-size: 1.2em;
+}
+
+main>h1 {
+    font-size: 5em;
+    font-weight: 500;
+}
+
+main>h2 {
+    font-size: 5em;
+    font-weight: 400;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+main>h2>a {
+    color: #43cef5;
+    text-decoration: none;
+}
+
+main>h2>a:hover {
+    text-decoration: underline;
+}
+
+main>.description {
+    width: 25em;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+main>.description>a {
+    color: #43cef5;
+    text-decoration: none;
+}
+
+main>.description>a:hover {
+    text-decoration: underline;
+}
+
+main>.button {
+    padding: 1em;
+    display: flex;
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #43cef5;
+    margin-bottom: 5em;
+    border-radius: 10px;
+    text-decoration: none;
+    align-self: flex-start;
+    transition-duration: 0.2s;
+    border: 1px solid #43cef5;
+    transition-timing-function: linear;
+}
+
+main>.button:hover {
+    color: #0a192f;
+    background-color: #43cef5;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header>nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header>nav>a {
+        font-size: 1em;
+    }
+
+    main>h1 {
+        font-size: 3em;
+    }
+
+    main>h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    main>.description {
+        width: 100%;
+    }
+}

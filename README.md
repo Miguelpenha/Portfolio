@@ -1,2 +1,2 @@
 # O Meu Portfolio
- * Pode ser visto em [https://portfolio-miguelpenha.vercel.app/](https://portfolio-miguelpenha.vercel.app/)
+ * Pode ser visto em [https://portfolio-miguelpenha.vercel.app](https://portfolio-miguelpenha.vercel.app)
